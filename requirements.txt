@@ -1,0 +1,27 @@
+# Build dependencies - install these first!
+packaging
+wheel
+
+# Core ML dependencies
+torch>=2.0.0
+torchvision
+transformers==4.40.1
+
+# Model-specific dependencies
+einops
+timm
+
+# Optional acceleration - Linux only with CUDA toolkit
+# flash-attn>=2.0.0  # Skip on Windows - requires CUDA compilation
+
+# Video and image processing
+decord
+opencv-python
+imageio
+numpy
+pillow
+
+# Additional utilities
+accelerate
+sentencepiece
+huggingface_hub
