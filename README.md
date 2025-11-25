@@ -31,8 +31,10 @@ git clone <your-repo-url>
 cd VLTrial
 
 # Create virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\Activate.ps1
+pathToThe3.8+Version/python -m venv venv
+
+On Linux: source venv/bin/activate
+On Windows: venv\Scripts\Activate.ps1
 
 # Install build dependencies first
 pip install packaging wheel
@@ -53,8 +55,10 @@ python download_models.py
 ```
 
 Choose:
-- Option 1: Model code only (fast, ~50MB)
-- Option 2: Complete model with weights (full functionality, ~15GB)
+1. Download model code only (fast, ~50MB)
+2. Download complete model with weights (slow, ~15GB)
+3. Verify existing installation of model files
+4. Exit
 
 ### 3. Verify Setup
 
@@ -239,10 +243,10 @@ Memory usage: 15.62 GB
 
 | GPU | VRAM | Analysis Time (4 questions) |
 |-----|------|----------------------------|
-| RTX 2070 | 8GB | ~4 minutes |
-| RTX 3080 | 10GB | ~2.5 minutes |
-| RTX 4090 | 24GB | ~1.5 minutes |
-| CPU | - | ~15+ minutes |
+| RTX 2070 | 8GB | ~15 minutes |
+| RTX 3080 | 10GB | ~7.5 minutes |
+| RTX 4090 | 24GB | ~3.5 minutes |
+| CPU | - | ~60+ minutes |
 
 ## 📝 Model Information
 
