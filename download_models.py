@@ -199,7 +199,7 @@ def main():
         print("\n📋 Choose an option:")
         print("1. Download model code only (fast, ~50MB)")
         print("2. Download complete model with weights (slow, ~15GB)")
-        print("3. Verify existing installation")
+        print("3. Verify existing installation of model files")
         print("4. Exit")
 
         choice = input("\n👉 Enter your choice (1-4): ").strip()
